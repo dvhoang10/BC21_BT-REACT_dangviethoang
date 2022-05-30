@@ -5,12 +5,14 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
-import { rootReducer } from "./components/CuaHangBurger/redux_CuaHangBurger/reducer/rootReducer";
+// import { rootReducer } from "./components/CuaHangBurger/redux_CuaHangBurger/reducer/rootReducer";
+
+import { foodReducer } from "./components/CuaHangDoAn/redux_food/reducer/food.reducer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 let storeRedux = createStore(
-  rootReducer,
+  foodReducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 

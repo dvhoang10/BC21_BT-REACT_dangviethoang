@@ -1,6 +1,9 @@
+import { Button } from "antd";
 import "./App.css";
+
 // import ShoesStore from "./components/CuaHangBanGiay/ShoesStore";
-import BurgerStore from "./components/CuaHangBurger/BurgerStore";
+// import BurgerStore from "./components/CuaHangBurger/BurgerStore";
+import FoodStore from "./components/CuaHangDoAn/FoodStore";
 
 function App() {
   return (
@@ -9,7 +12,10 @@ function App() {
       {/* <ShoesStore></ShoesStore> */}
 
       {/* Cửa hàng burger */}
-      <BurgerStore></BurgerStore>
+      {/* <BurgerStore></BurgerStore> */}
+
+      {/* Cửa hàng đồ ăn */}
+      <FoodStore></FoodStore>
     </div>
   );
 }
